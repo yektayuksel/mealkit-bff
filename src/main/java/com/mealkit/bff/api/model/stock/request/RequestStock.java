@@ -9,5 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RequestStock {
+    private String ingredientName;
     private Integer count;
+    private String unitOfMeasure;
 }

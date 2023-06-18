@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class TagApiOutput {
 
+    private Long id;
     private String name;
 
 }

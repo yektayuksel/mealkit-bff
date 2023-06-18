@@ -8,8 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class IngredientApiInput {
-
-    private String name;
-    private String unitOfMeasure;
+public class ProductIngredientDto {
+    private Long id;
+    private Integer amount;
 }

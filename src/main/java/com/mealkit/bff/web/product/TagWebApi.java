@@ -18,6 +18,7 @@ import java.util.List;
 public class TagWebApi {
 
     private final TagService tagService;
+
     @GetMapping("/getTags")
     public ResponseEntity<List<TagApiOutput>> getTags() {
         return tagService.getTags();
@@ -34,8 +35,8 @@ public class TagWebApi {
     }
 
     @PostMapping("/createTag")
-    ResponseEntity<Void> createTag(@RequestBody TagApiInput tagApiInput) {
+    public ResponseEntity<Void> createTag(@RequestBody TagApiInput tagApiInput) {
         tagService.createTag(tagApiInput);
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 }

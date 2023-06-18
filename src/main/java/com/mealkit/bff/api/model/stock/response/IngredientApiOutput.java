@@ -1,4 +1,4 @@
-package com.mealkit.bff.api.model.product.response;
+package com.mealkit.bff.api.model.stock.response;
 
 
 import lombok.AllArgsConstructor;

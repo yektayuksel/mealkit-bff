@@ -18,5 +18,7 @@ public class ProductApiInput {
     private String recipe;
     private Double price;
 
-    private List<Long> ingredientIds;
+    private List<ProductIngredientDto> ingredients;
+
+    private List<Long> tagIds;
 }

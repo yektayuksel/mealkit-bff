@@ -1,7 +1,6 @@
 package com.mealkit.bff.web.product;
 
 import com.mealkit.bff.api.model.product.response.FullProductApiOutput;
-import com.mealkit.bff.api.model.product.response.ProductApiOutput;
 import com.mealkit.bff.api.service.business.BusinessService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

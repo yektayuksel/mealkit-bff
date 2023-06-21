@@ -1,17 +1,17 @@
-package com.mealkit.bff.api.model.product.request;
+package com.mealkit.bff.api.model.product.response;
 
-
+import com.mealkit.bff.api.model.stock.response.ResponseStock;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProductApiInput {
+public class FullProductApiOutput {
 
+    private Long id;
     private String productName;
     private String description;
     private String imageUrl;
@@ -20,7 +20,8 @@ public class ProductApiInput {
     private Integer cookingTime;
     private Long calories;
     private String difficulty;
-    private List<ProductIngredientInputDto> ingredients;
+
+    private List<ResponseStock> ingredients;
 
     private List<Long> tagIds;
 }

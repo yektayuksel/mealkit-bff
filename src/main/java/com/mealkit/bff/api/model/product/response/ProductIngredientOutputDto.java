@@ -1,4 +1,4 @@
-package com.mealkit.bff.api.model.product.request;
+package com.mealkit.bff.api.model.product.response;
 
 
 import lombok.AllArgsConstructor;
@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ProductIngredientDto {
+public class ProductIngredientOutputDto {
     private Long id;
-    private Integer amount;
+    private Integer count;
 }

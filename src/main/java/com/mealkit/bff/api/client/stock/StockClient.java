@@ -17,6 +17,9 @@ public interface StockClient {
     @GetMapping
     ResponseEntity<List<ResponseStock>> getAllStock();
 
+    @PostMapping("/getAllStocks")
+    ResponseEntity<List<ResponseStock>> getAllStocks(@RequestBody List<Long> ids);
+
     @GetMapping("/{id}")
     ResponseEntity<ResponseStock> getStockById(@PathVariable Long id);
 

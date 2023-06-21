@@ -14,6 +14,7 @@ import java.util.List;
 public class ProductServiceImpl implements ProductService{
 
     private final ProductClient productClient;
+
     @Override
     public ResponseEntity<ProductApiOutput> getProductById(Long productId) throws Exception {
         return productClient.getProductById(productId);

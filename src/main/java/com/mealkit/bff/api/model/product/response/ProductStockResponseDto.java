@@ -1,5 +1,4 @@
-package com.mealkit.bff.api.model.stock.response;
-
+package com.mealkit.bff.api.model.product.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,10 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ResponseStock {
-
+public class ProductStockResponseDto {
     private Long id;
     private Integer count;
-    private String unitOfMeasure;
-    private String ingredientName;
 }

@@ -35,6 +35,11 @@ public class BusinessServiceImpl implements BusinessService{
 
         FullProductApiOutput fullProductApiOutput = new FullProductApiOutput();
 
+        for(int i = 0; i < ingredientApiOutputList.size(); i++){
+            ingredientApiOutputList.get(i).setCount(productStockResponseDtoList.get(i).getCount());
+        }
+
+
         fullProductApiOutput.setId(productApiOutput.getId());
         fullProductApiOutput.setCalories(productApiOutput.getCalories());
         fullProductApiOutput.setDescription(productApiOutput.getDescription());

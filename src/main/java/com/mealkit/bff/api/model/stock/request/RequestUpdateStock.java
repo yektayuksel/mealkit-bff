@@ -10,5 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class RequestUpdateStock {
     private Long id;
+    private String ingredientName;
     private Integer count;
+    private String unitOfMeasure;
 }
